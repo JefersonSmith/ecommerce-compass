@@ -442,6 +442,12 @@ body, html {
         max-width: 30%;
     }
 
+    .new-arrivals {
+        padding: 10px 10px;
+        background-color: #fff;
+        text-align: center;
+    }
+
     .product-card {
         max-width: 35%;
         flex: 1 1 45%;
@@ -452,4 +458,5 @@ body, html {
     }
 
 }
+
 
