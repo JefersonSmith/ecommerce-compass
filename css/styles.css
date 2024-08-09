@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Integral CF';
+    src: url(/assets/fonts/integralcf-bold.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('/assets/fonts/Satoshi-Regular.otf') format('truetype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'satoshi', sans-serif;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left, .navbar-center, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 20px;
+    font-family: 'Integral CF', sans-serif;
+}
+
+.nav-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'satoshi', sans-serif;
+}
+
+.navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 900px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    background-color: #f5f5f5;
+}
+
+#search-input::placeholder {
+    color: #b3b3b3;
+}
+
+.navbar-right .nav-icon {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.navbar-right .nav-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: #F2F0F1;
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.text-content h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-right: 150px;
+    line-height: 1.2;
+    font-family: 'Integral CF', sans-serif;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+
+}
+
+.shop-button {
+    display: inline-block;
+    padding: 15px 70px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 40px;
+}
+
+.stats {
+    display: flex;
+    gap: 40px;
+}
+
+.stats div {
+    text-align: center;    
+}
+
+.stats-card {
+    margin-right: 50px;
+}
+
+.stats h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-family: 'satoshi', sans-serif;
+    
+}
+
+.stats p {
+    font-size: 14px;
+    color: #666;
+    font-family: 'satoshi', sans-serif;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
