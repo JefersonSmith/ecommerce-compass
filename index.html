@@ -3,55 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Navbar</title>
+    <title>SHOP.CO</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <nav class="navbar">
+    <header class="navbar">
         <div class="navbar-left">
+            <a href="#" class="hamburger-icon" id="hamburger"><img src="/assets/icons/hamburger-icon.png" alt="Menu"></a>
             <div class="logo">SHOP.CO</div>
-            <ul class="nav-menu">
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">On Sale</a></li>
-                <li><a href="#">New Arrivals</a></li>
-                <li><a href="#">Brands</a></li>
-            </ul>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">On Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Brands</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="navbar-center">
-            <div class="search-container">
-                <input type="text" id="search-input" placeholder="Search for products..." >
-            </div>
+            <form class="search-container" role="search">
+                <input type="text" id="search-input" placeholder="Search for products...">
+            </form>
         </div>
         <div class="navbar-right">
+            <a href="#" class="nav-icon search-icon"><img src="/assets/icons/search-icon.png" alt="Search"></a>
             <a href="#" class="nav-icon"><img src="/assets/icons/cart-icon.png" alt="Cart"></a>
             <a href="#" class="nav-icon"><img src="/assets/icons/user-icon.png" alt="User"></a>
         </div>
+    </header>
+
+    <nav class="dropdown-menu" id="dropdownMenu">
+        <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">On Sale</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Brands</a></li>
+            <li><a href="#"><img src="/assets/icons/search-icon.png" alt="Search"> Search</a></li>
+            <li><a href="#"><img src="/assets/icons/cart-icon.png" alt="Cart"> Cart</a></li>
+            <li><a href="#"><img src="/assets/icons/user-icon.png" alt="User"> User</a></li>
+        </ul>
     </nav>
 
-    <div class="hero-section">
-        <div class="text-content">
+    <main class="hero-section">
+        <section class="text-content">
             <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
             <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
             <a href="#" class="shop-button">Shop Now</a>
             <div class="stats">
-                <div class="stats-card">
+                <article class="stats-card">
                     <h3>200+</h3>
                     <p>International Brands</p>
-                </div>
-                <div class="stats-card">
+                </article>
+                <article class="stats-card">
                     <h3>2,000+</h3>
                     <p>High-Quality Products</p>
-                </div>
-                <div  class="stats-card">
+                </article>
+                <article class="stats-card">
                     <h3>30,000+</h3>
                     <p>Happy Customers</p>
-                </div>
+                </article>
             </div>
-        </div>
-        <div class="image-content">
+        </section>
+        <section class="image-content">
             <img src="/assets/images/Banner.png" alt="Fashion Models">
-        </div>
-    </div>
-    <script src="script.js"></script>
+        </section>
+    </main>
+
+
+
+    <script src="/js/script.js"></script>
 </body>
 </html>
