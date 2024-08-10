@@ -475,6 +475,12 @@ hr {
         text-align: center;
     }
 
+    .top-selling {
+        padding: 10px 10px;
+        background-color: #fff;
+        text-align: center;
+    }
+
     .product-card {
         max-width: 35%;
         flex: 1 1 45%;
