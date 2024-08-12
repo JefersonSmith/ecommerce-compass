@@ -45,6 +45,7 @@ body, html {
 
 .nav-menu li {
     display: inline;
+    margin-right: 20px;
 }
 
 .nav-menu a {
@@ -441,14 +442,79 @@ hr {
 }
 
 
+
+.newsletter-container {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 160px;
+    position: relative;
+    top: 100px;
+    z-index: 10; 
+}
+
+.newsletter-container h2 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Integral CF', sans-serif;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    margin: 0 20px 20px 20px; 
+    width: 350px;
+    height: 30px;
+    text-align: center;
+
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    width: 370px;
+    height: 45px;
+
+    border-radius: 25px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #ddd;
+}
+
+
+
 .footer {
     background-color: #f7f7f7;
-    padding: 40px;
+    padding: 80px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     border-top: 1px solid #e5e5e5;
+    position: relative;
+    
 }
+
 .footer-column {
     flex: 1;
     margin: 0 80px;
@@ -489,11 +555,13 @@ hr {
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
+    padding-left: 160px;
+    padding-right: 160px;
+    background-color: #f7f7f7;
     font-size: 14px;
     color: #999;
     display: flex;
     justify-content: space-between;
-    margin: 0 80px;
 }
 .footer-bottom img {
     margin-left: 10px;
@@ -516,6 +584,30 @@ hr {
         background-position: left center; 
         margin-bottom: 10px;
 
+    }
+    
+
+
+    .newsletter-container {
+        flex-direction: column;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .newsletter-form {
+        margin-top: 15px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .newsletter-form input[type="email"] {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .newsletter-form button {
+        width: 100%;
     }
 }
 
@@ -634,6 +726,16 @@ hr {
         background-position: left center; 
     }
 
+
+    .newsletter-container {
+        top: 0; /* Reverte a posição do newsletter */
+    }
+
+
+    .footer {
+        padding: 0px;
+    }
+
     .footer-column:first-child {
         flex-basis: 100%;
         text-align: start;
@@ -651,6 +753,13 @@ hr {
         font-size: 14px;
         color: #999;
         flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
+    .footer-bottom img {
+        margin-left: 5px;
     }
 
 
