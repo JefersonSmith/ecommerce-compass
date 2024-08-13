@@ -202,6 +202,13 @@ body, html {
     margin-bottom: 40px;
 }
 
+.shop-button:hover {
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #000;
+    transition: all 0.2s ease-in-out;
+  }
+
 .stats {
     display: flex;
     gap: 40px;
@@ -610,6 +617,14 @@ p {
     background-color: #ddd;
 }
 
+#message {
+    color: red; 
+  }
+  
+  #message.success {
+    color: green;
+  }
+
 
 
 .footer {
@@ -894,4 +909,5 @@ p {
     }
 
 }
+
 
