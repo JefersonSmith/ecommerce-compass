@@ -17,6 +17,21 @@ document.addEventListener('click', function(event) {
     }
 });
 
+// Dropdown
+document.querySelector('.dropdown-toggle').addEventListener('click', function(event) {
+    event.preventDefault();
+    const dropdownMenu = this.nextElementSibling;
+
+    dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+});
+
+document.addEventListener('click', function(event) {
+    const isClickInside = document.querySelector('.dropdown').contains(event.target);
+    if (!isClickInside) {
+        document.querySelector('.dropdown-menu').style.display = 'none';
+    }
+});
+
 
 // Show/hide products
 function toggleProducts(sectionClass) {
