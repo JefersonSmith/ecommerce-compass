@@ -154,21 +154,21 @@ body, html {
 .hero-section {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    /* padding: 100px; */
+    align-items: end;
     background-color: #F2F0F1;
+    padding: 0; 
+    margin-bottom: 0; 
 }
 
 .text-content {
     max-width: 50%;
-    padding: 0px 100px;
+    padding: 0 80px; 
 }
 
 .text-content h1 {
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 20px;
-    margin-right: 150px;
     line-height: 1.2;
     font-family: 'Integral CF', sans-serif;
 }
@@ -177,7 +177,6 @@ body, html {
     font-size: 16px;
     color: #666;
     margin-bottom: 30px;
-
 }
 
 .shop-button {
@@ -195,21 +194,15 @@ body, html {
     gap: 40px;
 }
 
-.stats div {
-    text-align: center;    
-}
-
 .stats-card {
-    margin-right: 50px;
+    text-align: center;
 }
 
 .stats h3 {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 700;
     margin-bottom: 5px;
-    font-size: 40px;
     font-family: 'satoshi', sans-serif;
-    
 }
 
 .stats p {
@@ -218,33 +211,38 @@ body, html {
     font-family: 'satoshi', sans-serif;
 }
 
-.image-content img {
+.image-content {
+    display: flex;
+    justify-content: flex-end; 
+    flex-grow: 1;
+  }
+
+  .image-content img {
     max-width: 100%;
     height: auto;
-    object-fit: cover;
-}
-
-
+    margin-top: auto; 
+  }
 
 .brand-section {
     background-color: #000;
     padding: 20px 0;
     text-align: center;
+    margin: 0; 
 }
 
 .brand-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 .brand-item {
-    flex: 1 1 15%; 
-    max-width: 20%; 
+    flex: 1 1 15%;
+    max-width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -442,6 +440,84 @@ hr {
 }
 
 
+.carousel-container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 40px auto;  
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px; 
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% + 40px); 
+}
+
+.card {
+    flex: 0 0 33.33%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+.name-verified {
+    display: flex;
+    align-items: center;
+}
+
+.stars {
+    color: gold;
+    font-size: 20px;
+}
+
+.carousel-container h2 {
+    font-size: 40px;
+    margin: 20px;
+    font-weight: bold;
+    font-family: 'Integral CF', sans-serif;
+}
+.verified {
+    width: 25px;
+    height: 25px;
+}
+
+p {
+    font-size: 14px;
+    color: #555;
+}
+
+.prev-btn, .next-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    transform: translateY(0); 
+    z-index: 10; 
+}
+
+.prev-btn {
+    right: 50px;
+}
+
+.next-btn {
+    right: 10px; 
+}
+
+.prev-btn:hover, .next-btn:hover {
+    color: gray;
+}
+
+
+
 
 .newsletter-container {
     background-color: #000;
@@ -518,7 +594,7 @@ hr {
 .footer-column {
     flex: 1;
     margin: 0 80px;
-    min-width: 150px;
+    min-width: 180px;
 }
 .footer-column h4 {
     font-size: 16px;
@@ -646,6 +722,7 @@ hr {
     .hero-section {
         flex-direction: column;
         padding: 50px 50px 0px 50px;
+        align-items: center;
     }
 
     .text-content {
@@ -703,6 +780,7 @@ hr {
         text-align: center;
     }
 
+
     .top-selling {
         padding: 10px 10px;
         background-color: #fff;
@@ -726,9 +804,26 @@ hr {
         background-position: left center; 
     }
 
+    .card {
+        flex: 0 0 100%; 
+        margin: 0; 
+        padding: 10px; 
+    }
+
+    .carousel-container h2 {
+        font-size: 24px; 
+    }
+
+    .prev-btn, .next-btn {
+        top: 50%; 
+        left: 70%;
+        transform: translateY(-50%); 
+    }
+
+
 
     .newsletter-container {
-        top: 0; /* Reverte a posição do newsletter */
+        top: 0; 
     }
 
 
