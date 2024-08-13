@@ -1,3 +1,4 @@
+// Hamburger
 document.getElementById('hamburger').addEventListener('click', function() {
     var dropdownMenu = document.getElementById('dropdownMenu');
     if (dropdownMenu.style.display === 'block') {
@@ -17,17 +18,36 @@ document.addEventListener('click', function(event) {
 });
 
 
-document.getElementById('view-all-button').addEventListener('click', function(event) {
+// Show/hide products
+function toggleProducts(sectionClass) {
+    const hiddenProducts = document.querySelectorAll(`.${sectionClass} .product-card:nth-child(n+5)`);
+    const button = document.querySelector(`.${sectionClass} .view-all-button`);
+
+    if (button.textContent === 'View All') {
+        hiddenProducts.forEach(function(product) {
+            product.style.display = 'block';
+        });
+        button.textContent = 'View Less';
+    } else {
+        hiddenProducts.forEach(function(product) {
+            product.style.display = 'none';
+        });
+        button.textContent = 'View All';
+    }
+}
+
+document.querySelector('.new-arrivals .view-all-button').addEventListener('click', function(event) {
     event.preventDefault();
-    const productCards = document.querySelectorAll('.top-selling .product-card');
-    productCards.forEach(card => {
-        card.classList.toggle('hidden');
-    });
-    this.textContent = this.textContent === 'View All' ? 'View Less' : 'View All';
+    toggleProducts('new-arrivals');
+});
+
+document.querySelector('.top-selling .view-all-button').addEventListener('click', function(event) {
+    event.preventDefault();
+    toggleProducts('top-selling');
 });
 
 
-
+// Carousel
 const carousel = document.querySelector('.carousel');
 const cards = document.querySelectorAll('.card');
 const prevBtn = document.querySelector('.prev-btn');
