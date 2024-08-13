@@ -552,6 +552,20 @@ p {
     z-index: 10; 
 }
 
+.search-container {
+    width: 70%;
+    max-width: 900px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container i {
+    position: absolute;
+    left: 10px;
+    color: #888;
+}
+
 .newsletter-container h2 {
     font-size: 40px;
     margin: 0;
@@ -561,21 +575,20 @@ p {
 
 .newsletter-form {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
 
-.newsletter-form input[type="email"] {
-    padding: 10px;
-    font-size: 1em;
+.newsletter-form input[type="email"],
+.newsletter-form button {
+    flex: 1;
+    padding: 15px 20px; /* Ajuste o padding conforme necessário */
     border-radius: 25px;
     border: none;
     outline: none;
-    margin: 0 20px 20px 20px; 
-    width: 350px;
-    height: 30px;
     text-align: center;
-
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-family: 'Arial', sans-serif; /* Substitua pela fonte desejada */
 }
 
 .newsletter-form button {
@@ -682,30 +695,25 @@ p {
     }
     
 
+
+}
+
+@media (max-width: 1000px) {
     .newsletter-container {
         flex-direction: column;
         text-align: center;
         margin: 20px;
     }
 
-    .newsletter-form {
-        margin-top: 15px;
-        width: 100%;
-        flex-direction: column;
-    }
+
 
     .newsletter-form input[type="email"] {
-        margin-right: 0;
-        margin-bottom: 10px;
-        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 5px;
     }
 
-    .newsletter-form button {
-        width: 100%;
-    }
+
 }
-
-
 
 
 @media (max-width: 768px) {
@@ -853,6 +861,7 @@ p {
         top: 0; 
     }
 
+    
 
     .footer {
         padding: 0px;
