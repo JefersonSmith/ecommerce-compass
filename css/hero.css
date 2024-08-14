@@ -1,0 +1,134 @@
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    background-color: #f2f0f1;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  
+  .text-content {
+    max-width: 50%;
+    padding: 0 80px;
+  }
+  
+  .text-content h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-family: "Integral CF", sans-serif;
+  }
+  
+  .text-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .shop-button {
+    display: inline-block;
+    padding: 15px 70px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 40px;
+  }
+  
+  .shop-button:hover {
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #000;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .stats-card {
+    text-align: center;
+  }
+  
+  .stats h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-family: "satoshi", sans-serif;
+  }
+  
+  .stats p {
+    font-size: 14px;
+    color: #666;
+    font-family: "satoshi", sans-serif;
+  }
+  
+  .image-content {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+  
+  .image-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: auto;
+  }
+
+  @media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .text-content {
+        max-width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0 16px;
+      }
+    
+      .text-content h1 {
+        font-size: 36px;
+        text-align: start;
+      }
+    
+      .text-content p {
+        font-size: 14px;
+      }
+    
+      .shop-button {
+        width: 100%;
+        padding: 15px 0;
+      }
+    
+      .stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+    
+      .stats-card {
+        margin-right: 0;
+      }
+    
+      .stats-card:nth-child(3) {
+        grid-column: span 2;
+      }
+    
+      .stats-card h3 {
+        font-size: 24px;
+      }
+    
+      .image-content {
+        width: 100%;
+        text-align: center;
+      }
+    
+      .image-content img {
+        width: 100%;
+        height: auto;
+      }
+  }
