@@ -636,7 +636,7 @@ p {
 
 .footer-column {
   flex: 1;
-  margin-left: 60px;
+  margin-left: 40px;
   min-width: 180px;
 }
 .footer-column h4 {
