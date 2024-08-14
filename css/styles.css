@@ -753,19 +753,19 @@ p {
 
   .hero-section {
     flex-direction: column;
-    padding: 50px 50px 0px 50px;
     align-items: center;
   }
 
   .text-content {
     max-width: 100%;
     text-align: center;
+    margin: 0;
+    padding: 0 16px;
   }
 
   .text-content h1 {
-    font-size: 34px;
-    margin-right: 0;
-    margin-bottom: 20px;
+    font-size: 36px;
+    text-align: start;
   }
 
   .text-content p {
@@ -791,6 +791,10 @@ p {
     grid-column: span 2;
   }
 
+  .stats-card h3 {
+    font-size: 24px;
+  }
+
   .image-content {
     width: 100%;
     text-align: center;
@@ -804,6 +808,10 @@ p {
   .brand-item {
     flex: 1 1 25%;
     max-width: 30%;
+  }
+
+  .brand-item:nth-child(2) {
+    max-width: 70px;
   }
 
   .new-arrivals {
