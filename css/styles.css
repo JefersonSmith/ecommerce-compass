@@ -851,6 +851,10 @@ p {
         padding: 10px; 
     }
 
+    .card p {
+        width: 80%;
+    }
+
     .carousel-container h2 {
         font-size: 24px; 
     }
