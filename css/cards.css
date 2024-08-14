@@ -5,7 +5,7 @@
   }
   
   .new-arrivals h2 {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 700;
     margin-bottom: 40px;
     font-family: "Integral CF", sans-serif;
@@ -49,7 +49,7 @@
   }
   
   .product-info h3 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
   }
@@ -72,6 +72,7 @@
     font-size: 18px;
     font-weight: 700;
     text-align: left;
+    color: #000;
   }
   
   .old-price {
@@ -120,7 +121,7 @@
   }
   
   .top-selling h2 {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 700;
     margin-bottom: 40px;
     font-family: "Integral CF", sans-serif;
@@ -130,18 +131,29 @@
   .top-selling .product-card:nth-child(n + 5) {
     display: none;
   }
-
   @media (max-width: 768px) {
     .new-arrivals {
         padding: 10px 10px;
         background-color: #fff;
         text-align: center;
       }
+
+      .new-arrivals	h2 {
+        font-size: 32px;
+        font-weight: 700;
+        font-family: "Integral CF", sans-serif;
+      }
     
       .top-selling {
         padding: 10px 10px;
         background-color: #fff;
         text-align: center;
+      }
+
+      .top-selling	h2 {
+        font-size: 32px;
+        font-weight: 700;
+        font-family: "Integral CF", sans-serif;
       }
     
       .product-card {

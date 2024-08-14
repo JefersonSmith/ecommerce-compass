@@ -46,6 +46,8 @@ html {
   height: auto;
 }
 
+
+
 @media (max-width: 768px) {
   .brand-item {
     flex: 1 1 25%;
