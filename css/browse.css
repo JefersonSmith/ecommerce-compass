@@ -37,19 +37,19 @@
   }
   
   .item-casual {
-    background-image: url(/assets/images/casual.png);
+    background-image: url(assets/images/casual.png);
   }
   
   .item-formal {
-    background-image: url(/assets/images/formal.png);
+    background-image: url(assets/images/formal.png);
   }
   
   .item-party {
-    background-image: url(/assets/images/party.png);
+    background-image: url(assets/images/party.png);
   }
   
   .item-gym {
-    background-image: url(/assets/images/gym.png);
+    background-image: url(assets/images/gym.png);
   }
   .item {
     text-align: center;
