@@ -89,7 +89,11 @@
   .item-gym {
     width: 100%;
     height: auto;
-    min-height: 300px;
+    min-height: 190px;
     background-position: left center;
+  }
+
+  h2 {
+    font-size: 32px;
   }
 }

@@ -9,7 +9,7 @@
   
   .text-content {
     max-width: 50%;
-    padding: 0 80px;
+    padding: 0 100px;
   }
   
   .text-content h1 {
@@ -109,6 +109,16 @@
         grid-template-columns: 1fr 1fr;
         gap: 20px;
       }
+
+      .stats h3,
+      .stats p {
+        margin-bottom: 0px;
+        margin-top: 0px;
+      }
+
+      .stats-card:nth-child(2) {
+        border-left: 1px solid #cfcfcf; 
+      }
     
       .stats-card {
         margin-right: 0;
@@ -125,10 +135,14 @@
       .image-content {
         width: 100%;
         text-align: center;
+        display: flex;
+        justify-content: center; /* Mantém a imagem centralizada */
       }
     
       .image-content img {
-        width: 100%;
+        width: 130%;
         height: auto;
+        max-width: none;
+        margin: 0 auto; /* Centraliza a imagem */
       }
   }
