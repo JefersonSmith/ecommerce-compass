@@ -15,6 +15,34 @@ html {
   font-family: "satoshi", sans-serif;
 }
 
+.top-banner {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-family: "satoshi", sans-serif;
+    position: relative;
+    font-size: 14px;
+}
+
+.top-banner a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.top-banner .close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
 .main-container {
   max-width: 1440px;
   margin: 0 auto;
@@ -64,4 +92,14 @@ html {
   .brand-item:nth-child(2) {
     max-width: 70px;
   }
+
+  .top-banner {
+
+    font-size: 12px;
+}
+
+.top-banner .close-btn {
+  right: 10px;
+
+}
 }

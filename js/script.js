@@ -1,3 +1,10 @@
+// Top Banner
+    document.querySelector('.close-btn').addEventListener('click', function() {
+        document.querySelector('.top-banner').style.display = 'none'
+    });
+
+
+
 // Hamburger
 document.getElementById("hamburger").addEventListener("click", function () {
   var dropdownMenu = document.getElementById("dropdownMenu");
