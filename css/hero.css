@@ -136,13 +136,15 @@
         width: 100%;
         text-align: center;
         display: flex;
-        justify-content: center; /* Mantém a imagem centralizada */
+        justify-content: center; 
+        overflow: hidden; 
+
       }
     
       .image-content img {
         width: 130%;
         height: auto;
         max-width: none;
-        margin: 0 auto; /* Centraliza a imagem */
+        margin: 0 auto; 
       }
   }
