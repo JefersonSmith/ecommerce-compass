@@ -45,6 +45,50 @@ document.addEventListener("click", function (event) {
   }
 });
 
+// Cards
+
+document.addEventListener("DOMContentLoaded", function() {
+  function loadProducts(category, containerId) {
+    const productList = document.getElementById(containerId);
+
+    fetch('products.json')
+      .then(response => response.json())
+      .then(products => {
+        const filteredProducts = products.filter(product => product.category === category);
+
+        filteredProducts.forEach(product => {
+          const productCard = document.createElement("article");
+          productCard.classList.add("product-card");
+
+          productCard.innerHTML = `
+            <img src="${product.image}" alt="${product.name}" />
+            <div class="product-info">
+              <h3>${product.name}</h3>
+              <div class="product-rating">
+                <span>${"⭐".repeat(product.rating)}</span>
+                <span>${product.rating}/5</span>
+              </div>
+              <p class="product-price">
+                $${product.price}
+                ${product.oldPrice ? `<span class="old-price">$${product.oldPrice}</span>` : ""}
+                ${product.discount ? `<span class="discount">-${product.discount}%</span>` : ""}
+              </p>
+            </div>
+          `;
+
+          productList.appendChild(productCard);
+        });
+      })
+      .catch(error => {
+        console.error("Erro ao carregar os produtos:", error);
+      });
+  }
+
+  loadProducts("newArrivals", "product-list-new-arrivals");
+  loadProducts("topSelling", "product-list-top-selling");
+});
+
+
 // Show/hide products
 function toggleProducts(sectionClass) {
   const hiddenProducts = document.querySelectorAll(
@@ -151,3 +195,5 @@ submitButton.addEventListener("click", (event) => {
     message.classList.add("error");
   }
 });
+
+
